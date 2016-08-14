@@ -11852,7 +11852,7 @@ var ReactiveTest = Rx.ReactiveTest = {
     return UnderlyingObservable;
   }(ObservableBase));
 
-  var GroupedObservable = (function (__super__) {
+  var GroupedObservable = Rx.GroupedObservable = (function (__super__) {
     inherits(GroupedObservable, __super__);
     function GroupedObservable(key, underlyingObservable, mergedDisposable) {
       __super__.call(this);
